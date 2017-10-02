@@ -1,0 +1,188 @@
+.jqueryslidemenu1 {
+    height: 60px;
+margin-right: -5px;
+    
+}
+.jqueryslidemenu {
+    z-index: 100;
+    position: relative;
+}
+.jqueryslidemenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li {
+    position: relative;
+    display: inline;
+    float: left;
+    z-index: 3;
+}
+
+/*Top level menu link items style*/
+
+.jqueryslidemenu ul li a {
+    color: #fff;
+    line-height: 74px;
+    padding: 0 17px 0 17px;
+    display: inline-block;
+    font-size:14px;
+    font-weight: bold;
+    /* background:#006; */
+    /* border-right:1px solid #183883; */
+}
+.jqueryslidemenu ul li a span {
+    display: inline-block;
+}
+.jqueryslidemenu ul li.last a span {
+    background: none;
+}
+
+.jqueryslidemenu ul li.select {
+}
+.jqueryslidemenu ul li.select a {
+    /* background: #c00; */
+}
+.jqueryslidemenu ul li.select a span {
+    color: #f00;
+}
+.jqueryslidemenu ul li.select a:hover {
+    color: #fff;
+}
+.jqueryslidemenu ul li.select a span {
+}
+.jqueryslidemenu ul li.select li a {
+    /*background: #6b1600;*/
+    background: none;
+}
+.jqueryslidemenu ul li a:hover {
+    /*  background: url(/images/menu-active.png) repeat-x right 0 ;    
+    text-decoration: underline !important; */
+    color:#c00;
+}
+.jqueryslidemenu ul li.select a:hover {
+    /*color: #fff;*/
+}
+
+
+
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul {
+   
+    position: absolute;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    z-index: 999;
+    padding: 9px 13px;
+    border-top: none;
+    width: 190px !important; /* box-shadow: #ccc 5px 5px 2px;     */
+    background: url(/images/menu-ul-sub.png) 0 0;
+overflow: visible !important;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li {
+    display: list-item;
+    float: none;
+    margin-bottom: 3px;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul {
+    top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a {
+    color: #fff !important;
+    display: block;
+    min-height: 20px !important;
+    height: auto !important;
+    line-height: 20px !important;
+    text-transform: none;
+    font-weight: normal; /*  background: #f8f8f8 !important;*/
+    background: #000;
+    padding:7px 13px;
+    border: 1px solid #333;
+}
+.jqueryslidemenu ul li.select li a {
+    font-weight: normal;
+}
+.jqueryslidemenu ul li ul li a:hover, .jqueryslidemenu ul li.select li a:hover {
+    text-decoration: none !important;
+    color: #c00 !important;
+    font-weight: bold;
+}
+
+/*  search */
+.jqueryslidemenu ul li.li-search {
+    float: right;
+    background: none;
+    padding-right: 10px;
+}
+.jqueryslidemenu ul li.li-search a {
+    padding-left: 3px;
+}
+.jqueryslidemenu ul li.li-search a img {
+    height: 23px;
+}
+.jqueryslidemenu ul li.li-search .textbox {
+    line-height: 16px;
+    height: 16px;
+    padding: 5px 8px 5px 5px;
+    width: 163px;
+    float: left;
+    margin-top: 11px;
+    margin-right: 3px;
+    border: none;
+    font-size: 8pt;
+    color: #666;
+    font-style: italic;
+    background: url(/images/timkiem-bg.png) no-repeat 0 0;
+}
+.jqueryslidemenu ul li.li-search .search-btn {
+    float: left;
+    background: url(/images/timkiem-btn.png) no-repeat 0 0;
+    text-indent: -100000px;
+    width: 29px;
+    height: 27px;
+    padding: 0;
+    margin-top: 11px;
+}
+.jqueryslidemenu ul li.has_child a {
+    padding-right: 15px;
+    background: url(/images/menu-hasimg-inactive.png) no-repeat 100% 50%;
+}
+.jqueryslidemenu ul li.select.has_child a {
+    padding-right: 15px;
+    background: url(/images/menu-hasimg-active.png) no-repeat 100% 50%;
+}
+.jqueryslidemenu ul li.has_child ul li a, .jqueryslidemenu ul li.select.has_child ul li a {
+    padding-right: 15px;
+    background: #000;
+}
+.jqueryslidemenu ul li ul li.has_child a {
+    padding-right: 15px;
+    background: #000 url(/images/menu-has-child1.png) no-repeat 150px 50%;
+}
+.jqueryslidemenu ul li ul li.select.has_child a, .jqueryslidemenu ul li.select.has_child ul li.has_child a {
+    padding-right: 15px;
+    background:  #000 url(/images/menu-has-child1.png) no-repeat 150px 50%;
+}
+
+.jqueryslidemenu ul li.has_child ul li.has_child  ul li  a , .jqueryslidemenu ul li.select.has_child ul li.has_child  ul li a {
+    padding-right: 15px;
+    background: #000;
+}
+#a_menu_home img
+{
+    margin-top: 22px;
+}
+#a_menu_home a
+{
+    /* margin-top: 22px; */
+    padding: 0;
+}

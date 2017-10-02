@@ -1,0 +1,54 @@
+#backgroundPopup
+{
+    display: none;
+    position: fixed;
+    _position: absolute; /* hack for internet explorer 6*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    border: 1px solid #cecece;
+    z-index: 1199;
+}
+#popupContact
+{
+     display: block;
+    z-index: 9999;
+    position:absolute;
+    _position: absolute; /* hack for internet explorer 6*/
+    padding: 7px;
+    font-size: 13px;
+    z-index: 9999;
+    top: 77.5px;
+width: 100%;
+}
+#popupContact img
+{
+    padding: 3px;
+    background: none;
+}
+#popupContact h1
+{
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px dotted #D3D3D3;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+}
+#popupContactClose
+{
+    font-size: 14px;
+    line-height: 14px;
+    float:right;
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+}
+#button
+{
+    text-align: center;
+    margin: 100px;
+}
