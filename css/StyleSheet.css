@@ -522,7 +522,10 @@ html > body .banner-flash {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #eee;
 }
-
+.box-tintuc:last-child{
+	border: 0;
+	margin-bottom:0;
+}
 	.box-tintuc .img {
 		margin-right: 11px;
 		float: left;
