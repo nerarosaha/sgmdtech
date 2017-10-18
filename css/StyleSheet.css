@@ -41,8 +41,10 @@ a:hover {
 }
 
 	#header h1 {
-		margin-top: 0;
-		margin-bottom: 0;
+		    margin-top: 13px;
+                    margin-bottom: 0;
+                    color: white;
+                    font-weight: bold;
 	}
 
 	#header .logo {
@@ -169,7 +171,7 @@ ul, ul li, ol, ol li {
 	color: #fff;
 	padding: 10px 0 5px;
 	font-size: 12px;
-	margin-bottom: 44px;
+	margin-bottom: 30px;
 }
 
 	#menufooter a, #menufooter a:link, #menufooter a:visited {
